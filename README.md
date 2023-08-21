@@ -1,6 +1,6 @@
 # Tienda Online de Artículos Tecnológicos: Un Proyecto CSS3 Impresionante
 
-¡Saludos, visitantes y entusiastas de la tecnología! Te damos la bienvenida a nuestro emocionante proyecto alojado en GitHub, donde hemos creado una atractiva tienda online de artículos tecnológicos utilizando las potentes capacidades de HTML5 y CSS3. Ponemos un fuerte enfoque en CSS3 para diseñar una experiencia de compra en línea dinámica y cautivadora, sin depender de plugins adicionales. Aquí, explorarás un mundo de animaciones, estilos y características deslumbrantes implementadas únicamente con CSS3.
+¡Saludos, visitantes y entusiastas de la tecnología! Te doy la bienvenida a un emocionante proyecto alojado en GitHub, donde he creado una atractiva tienda online de artículos tecnológicos utilizando las potentes capacidades de HTML5 y CSS3. Ponemos un fuerte enfoque en CSS3 para diseñar una experiencia de compra en línea dinámica y cautivadora, sin depender de plugins adicionales. Aquí, explorarás un mundo de animaciones, estilos y características deslumbrantes implementadas únicamente con CSS3.
 
 ## Tecnologías Estelares
 
