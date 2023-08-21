@@ -46,9 +46,6 @@ Sumérgete en un emocionante recorrido por nuestra tienda online:
 
 4. **Envía un Pull Request**: Una vez que realices cambios, envía un pull request para que podamos revisar y fusionar tus contribuciones.
 
-## Agradecimientos
-
-Damos un agradecimiento especial a nuestro talentoso equipo de desarrollo y a la comunidad de código abierto por su apoyo. ¡Esperamos que disfrutes explorando nuestra tienda online tanto como nosotros disfrutamos creándola!
 
 Atentamente,
 Bryan Estada Gomez
