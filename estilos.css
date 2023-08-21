@@ -1,0 +1,506 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root {
+  --color-primario: #0d6efd;
+  --color-secundario: #0b5ed7;
+  --color-oscuro: #122936;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+/* MENU PRINCIPAL */
+
+.menu-principal {
+  width: 100%;
+  height: 50px;
+}
+
+.menu-principal div {
+  float: left;
+}
+
+.nav-imagen {
+  height: 100%;
+}
+
+.nav-imagen img {
+  width: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-enlaces {
+  height: 100%;
+}
+
+.nav-enlaces a {
+  line-height: 50px;
+  margin: 0 20px;
+  color: #000;
+  padding: 4px 10px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav-enlaces a:first-child {
+  color: var(--color-primario);
+}
+
+.nav-enlaces a:hover {
+  border: 2px solid var(--color-primario);
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  background: url(img/wallpaper2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: calc(100vh - 50px);
+  background-attachment: fixed;
+}
+
+header div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  font-size: 50px;
+  text-shadow: 5px 0px 15px #000;
+}
+
+header button {
+  background: var(--color-primario);
+  width: 180px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+header button:hover {
+  transform: scale(1.1);
+  background: var(--color-secundario);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Nuestros productos */
+
+section {
+  padding: 30px 100px;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 100;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+
+.card {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 33%;
+  height: 420px;
+  margin: 1px;
+  border: none;
+  background: var(--color-oscuro);
+}
+
+.card .img-card {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card .img-card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  transition: all 0.5s;
+}
+
+.content-card {
+  width: 100%;
+  position: absolute;
+  bottom: 12%;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.content-card h3 {
+  font-size: 2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content-card h2 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.buy {
+  position: relative;
+  padding: 10px 30px;
+  background: var(--color-primario);
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content-card a {
+  top: 200px;
+  transition: all 0.5s;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-primario);
+  transform: skewY(345deg);
+  transition: all 0.5s;
+}
+
+.card::after {
+  content: "Technology";
+  position: absolute;
+  bottom: 0;
+  font-size: 128px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card:hover::before {
+  transform: skewY(390deg);
+  top: -70%;
+}
+
+.card:hover .content-card .buy {
+  top: 20px;
+  opacity: 1;
+}
+
+.card:hover .img-card img{
+    max-width: 60%; 
+}
+
+.buy:hover {
+  background: var(--color-secundario);
+}
+
+/* SECTION MENSAJE */
+
+section.mensaje {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url(img/section.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+section.mensaje::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+Section.mensaje p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 65px;
+  text-shadow: 5px 0 10px #000;
+}
+
+/* FAVORITOS */
+
+.favorito {
+    position: relative;
+  padding: 20px 150px;
+  width: 100%;
+  height: 100vh;
+}
+
+.favorito::before{
+    content: 'Technology';
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 10vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.1); 
+}
+
+.favorito::after{
+    content: 'Best';
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 10vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.05);
+
+    
+}
+.container-favorito > div {
+  float: left;
+  width: 40%;
+  margin: 30px;
+}
+.imagen-fav {
+  position: relative;
+}
+
+.imagen-fav img {
+  width: 100%;
+  transition: all .5s;
+}
+
+.content-fav {
+  height: 100%;
+}
+
+.header-fav h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.header-fav h3 {
+  color: var(--color-primario);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.content-fav .text {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.content-inferior {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-fav .content-inferior p {
+    font-size: 40px;
+    color: var(--color-oscuro);
+    line-height: 50px;
+    font-weight: 600;
+    float: left;
+}
+
+.content-fav .content-inferior a{
+    float: right;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+
+
+.imagen-fav::before{
+    content: 'Best Choice';
+    position: absolute;
+    text-align: center;
+    background: var(--color-secundario);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 10px 5px var(--color-secundario);
+    transition: all .5s;
+}
+
+.imagen-fav:hover::before{
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.container-favorito:hover .imagen-fav img{
+    transform: scale(1.1);
+}
+
+.content-inferior a:hover{
+    transform: scale(1.1);
+}
+
+/* Suscribirse */
+
+.suscribe{
+    background: var(--color-oscuro);
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.search{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e5e5e5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 10px;
+    transition: all .5s;
+}
+
+.suscribe::before{
+    content: 'Suscribete';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+    font-size: 15vw;
+}
+
+.search:hover{
+    width: 300px;
+}
+
+.search:hover .search-text{
+    width: 90%;
+}
+
+.search:hover .search-icon{
+    background: var(--color-primario);
+    color: #fff;
+}
+
+
+.search-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--color-primario);
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px!important;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 10px;
+    width: 0;
+    height: 100%;
+    color: #000;
+    font-size: 16px;
+    transition: all .5s;
+
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #0F212C;
+}
+
+
+
+footer div{
+    float: left;
+    line-height:  100px;
+    width: 25%;
+    height: 100%;
+    transition: all .5s;
+}
+
+
+footer a{
+    display: block;
+    font-size: 30px;
+    color: #CCC;
+    text-align: center;
+    transition: all .5s;
+}
+
+footer div:hover{
+    background: #0D1C25;
+}
+
+footer div:hover a{
+    font-size: 35px;
+}
